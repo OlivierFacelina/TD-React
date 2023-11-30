@@ -1,0 +1,202 @@
+@use './_mixin' as m;
+@use './_variables' as *;
+
+.nav {
+    &__header {
+        @include m.dflex();
+        padding-top: 8vh;
+    }
+    
+    &__title {
+        @include m.title();
+        height: 100vh;
+        color: #FFFFFF;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    
+    &__title p {
+        text-align: center;
+    }
+    
+    &__menu {
+        padding-left: 5vh;
+        cursor: pointer;
+    }
+    
+    &__icon {
+        padding-right: 5vh;
+        cursor: pointer;
+    }
+
+    &__logo {
+        cursor: pointer;
+    }
+    
+    &__model {
+        font-size: 46px;
+    }
+}
+
+.linear {
+    background: linear-gradient(0.25turn, map-get($map: $color, $key: 'violet'), map-get($map: $color, $key: 'magenta'),map-get($map: $color, $key: 'rose'),map-get($map: $color, $key: 'jaune'),map-get($map: $color, $key: 'vert'));
+    height: 2vh;
+}
+
+.title {
+    &__bloc {
+        height: 50vh;
+        width: 100%;
+        background-image: url('/assets/images/MicrosoftTeams-image.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include m.logo();
+    }
+    
+    &__bloc p {
+        margin-top: 3vh;
+        text-align: center;
+    }
+    
+    &__black-line {
+        background-color: black; 
+        width: 5vw;
+        height: 1vh;
+        margin-top: 3vh;
+    }
+    
+}
+
+.content {
+    margin-top: 30vh;
+    
+    &__menu {
+        @include m.section-menu();
+    }
+    
+    &__part {
+        @include m.section-part();
+        margin-top: 20vh;
+    }
+
+    &__button {
+        background-color: map-get($map: $color, $key: 'cyan');
+        color: white;
+        border: none;
+        height: 5vh;
+        width: 10vw;
+        margin-top: 2vh;
+        cursor: pointer;
+        @include m.button();
+    }
+    
+    &__grid__image {
+        flex-shrink: 0;
+        background-color: #D3D3D3;
+        width: 20vw;
+        margin-bottom: 2vh;
+    }
+
+    &__display {
+        @include m.display();
+    }
+
+    &__serie {
+        text-transform: uppercase;
+        font-weight: bold;
+        writing-mode:vertical-lr;
+        transform: rotate(180deg);
+    }
+
+    &__grid__model {
+        font-weight: bold;
+    }
+
+    &__grid__1 {
+        @include m.grid1();
+    }
+    
+    &__grid__circle {
+        @include m.grid-circle();
+        margin-top: 2vh;
+    }
+
+    &__grid__description {
+        margin-top: 2vh;
+    }
+
+    &__grid1__circle1 {
+        background-color: map-get($map: $color, $key: 'cyan');
+        color: black;
+        border-radius: 150px;
+        border: 1px solid black;
+        width: 1.2vw;
+        height: 1.2vw;
+        margin-right: 1vh;
+    }
+
+    &__grid1__circle2 {
+        background-color: map-get($map: $color, $key: 'violet');
+        color: black;
+        border-radius: 150px;
+        border: 1px solid black;
+        width: 1.2vw;
+        height: 1.2vw;
+        margin-right: 1vh;
+    }
+
+    &__grid1__circle3 {
+        background-color: map-get($map: $color, $key: 'noir');
+        color: black;
+        border-radius: 150px;
+        border: 1px solid black;
+        width: 1.2vw;
+        height: 1.2vw;
+        margin-right: 1vh;
+    }
+
+    &__grid1__circle4 {
+        background-color: map-get($map: $color, $key: 'blanc');
+        color: black;
+        border-radius: 150px;
+        border: 1px solid black;
+        width: 1.2vw;
+        height: 1.2vw;
+        margin-right: 1vh;
+    }
+    
+    &__grid__price {
+        @include m.grid-price();
+        margin-top: 2vh;
+    }
+
+    &__reduce_price {
+        margin-right: 2vh;
+    }
+
+    &__price {
+        text-decoration: line-through;
+        color: grey;
+    }
+
+    &__reduction-info {
+        margin-top: 2vh;
+        @include m.reduction-info();
+    }
+    
+    &__reduction-image {
+        background-color: map-get($map: $color, $key: 'cyan');
+        width: 2vw;
+        margin-right: 2vh;
+    }
+
+    &__reduction-text {
+        font-size: 13px;
+    }
+
+
+}
+
+.content h3 {
+    text-align: center;
+}

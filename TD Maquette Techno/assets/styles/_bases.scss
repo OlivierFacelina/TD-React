@@ -1,0 +1,57 @@
+@use './_mixin' as m;
+// @use './_variables' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    // background-color: black;
+}
+
+header {
+    height: 100%;
+    background-image: url("/assets/images/pexels-soumil-kumar-735911.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1, h2, h3 {
+    transform: scaleY(1.5);
+}
+  
+h2 {
+    margin-bottom: 2vh;
+}
+
+h3 {
+    margin-top: 5vh;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.footer {
+    height: 40vh;
+    margin-top: 10vh;
+    background-color: #D3D3D3;
+    @include m.footer();
+
+    &__input {
+        height: 4vh;
+    }
+
+    &__button {
+        margin-bottom: 2vh;
+        height: 4vh;
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+
+    &__media img {
+        padding-right: 2vh;
+    }
+}
+

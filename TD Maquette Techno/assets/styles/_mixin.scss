@@ -1,0 +1,85 @@
+// Mixin (fonction sans return)
+@mixin dflex($direction: row, $justify: space-between, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin title($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin logo($direction: column, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin section-menu($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin display($direction: row, $justify: flex-start, $align: flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid1($direction: column) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+@mixin section-part($direction: row, $justify: space-around, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin grid-circle($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin grid-price($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin grid-button($direction: row, $justify: center, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin reduction-info($direction: row, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+}
+
+@mixin footer($direction: row, $justify: space-around, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin button($direction: row, $justify: center, $align: center) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

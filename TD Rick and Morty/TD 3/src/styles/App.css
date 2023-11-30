@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('../assets/background-by-adult-swim.png');
+}
+
+ul {
+  margin-top: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card__list {
+  margin-bottom: 5vh;
+  height: 450px;
+  list-style-type: none;
+  margin-left: 2vh;
+  background-color: white;
+  color: black;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  display: flex;
+  margin: 5vh 0 0 25vh;
+}

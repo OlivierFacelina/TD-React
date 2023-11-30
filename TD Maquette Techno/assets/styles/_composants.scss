@@ -1,0 +1,22 @@
+.content {
+    &__button__mouse, &__button__audio, &__button__keyboard {
+        background-color: black;
+        color: white;
+        cursor: pointer;
+    }
+
+    &__button__all {
+        max-width: 10vh;
+    }
+
+    &__menu button {
+        margin-top: 10vh;
+        margin-right: 2vh;
+        width: 20vh;
+        height: 5vh;
+        text-transform: uppercase;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+}
+    
